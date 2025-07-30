@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const addNewItem = async (formData) => {
     console.log("Sending formData:", formData);
-  const res = await axios.post('http://localhost:3001/addItem', formData, {
+  const res = await axios.post('https://chatgpt-backend-vfx0.onrender.com/addItem', formData, {
     headers: {
       'Content-Type': 'multipart/form-data'
     }

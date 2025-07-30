@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault();
     // Add registration logic here
     try {
-        const response = await fetch('http://localhost:3002/user', {
+        const response = await fetch('https://chatgpt-backend-vfx0.onrender.com/user', {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ function ImageGeneration() {
     setImageUrl("");
 
     try {
-      const res = await axios.post("http://localhost:3002/image", { prompt });
+      const res = await axios.post("https://chatgpt-backend-vfx0.onrender.com/image", { prompt });
       setImageUrl(res.data.image);
       alert(res.error);
     } catch (err) {

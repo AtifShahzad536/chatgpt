@@ -1,5 +1,5 @@
 const updateOneItem=(id, data) => {
-  return fetch(`http://localhost:3001/updateItem/${id}`, {
+  return fetch(`https://chatgpt-backend-vfx0.onrender.com/updateItem/${id}`, {
     method: 'PUT',
     body: data,
   })

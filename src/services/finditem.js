@@ -1,6 +1,6 @@
 const findsingleitem = async (id) => {  
     try {
-        const res = await fetch(`http://localhost:3001/getOneItem/${id}`);
+        const res = await fetch(`https://chatgpt-backend-vfx0.onrender.com/getOneItem/${id}`);
         if (!res.ok) {
         throw new Error("Network response was not ok");
         }

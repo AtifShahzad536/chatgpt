@@ -17,7 +17,7 @@ const NavBar = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:3002/user/logout',null,{
+      await axios.post('https://chatgpt-backend-vfx0.onrender.com/user/logout',null,{
         withCredentials:true
       }); // 👈 Replace with your actual logout endpoint
         localStorage.setItem('isLoggedIn','false') // Update localStorage

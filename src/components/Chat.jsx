@@ -17,7 +17,7 @@ const Chat = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:3002/openapi', { prompt: input,check11 });
+      const res = await axios.post('https://chatgpt-backend-vfx0.onrender.com/openapi', { prompt: input,check11 });
       const botMessage = { role: 'assistant', content: res.data.content };
       setMessages([...newMessages, botMessage]);
     } catch (error) {

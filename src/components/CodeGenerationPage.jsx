@@ -10,7 +10,7 @@ const CodeGenerationPage = () => {
 
   const handleGenerateCode = async () => {
     try {
-      const res = await axios.post('http://localhost:3002/code', { prompt });
+      const res = await axios.post('https://chatgpt-backend-vfx0.onrender.com/code', { prompt });
       setGeneratedCode(res.data.code);
     } catch (err) {
       console.error(err);

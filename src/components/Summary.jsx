@@ -8,7 +8,7 @@ const SummarizationPage = () => {
 
   const handleSummarize = async () => {
     try {
-      const res = await axios.post('http://localhost:3002/summary', { text });
+      const res = await axios.post('https://chatgpt-backend-vfx0.onrender.com/summary', { text });
       setSummary(res.data.summary);
     } catch (err) {
       console.error(err);

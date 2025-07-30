@@ -1,6 +1,6 @@
  const fetchItems = async () => {
     try {
-      const res = await fetch("http://localhost:3001/getItems");
+      const res = await fetch("https://chatgpt-backend-vfx0.onrender.com/getItems");
       const data = await res.json();
       console.log("Fetched items:", data);
 
